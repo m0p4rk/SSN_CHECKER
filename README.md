@@ -1,4 +1,4 @@
-# Korean Resident Registration Number Validator
+# SSN_CHECKER
 
 This project is a web application for validating the format and authenticity of Korean Resident Registration Numbers (RRN). Users can input an RRN to find out the gender, date of birth, and the registered region associated with the number.
 
