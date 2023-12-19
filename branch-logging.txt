@@ -1,3 +1,0 @@
-1.branch made
-2.branch updated with new main and log added
-3.Found bug - muted text alignment centered (index.html)
