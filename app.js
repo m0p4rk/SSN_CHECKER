@@ -167,32 +167,34 @@ document.getElementById("idCheckForm").addEventListener("submit", function(event
     }
 });
 
-document.getElementById("idCheckForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const idNumber = document.getElementById("idInput").value;
+// document.getElementById("idCheckForm").addEventListener("submit", function(event) {
+//     event.preventDefault();
+//     const idNumber = document.getElementById("idInput").value;
 
-    // 입력값을 로컬 저장소에 저장
-    localStorage.setItem("inputLog", idNumber);
+//     // 입력값을 로컬 저장소에 저장
+//     localStorage.setItem("inputLog", idNumber);
 
-    try {
-        const idInfo = new KoreanIDInfo(idNumber);
-        if (idInfo.validateID()) {
-            document.getElementById("resultText").textContent = `유효한 주민등록번호입니다. 성별: ${idInfo.getGender()}, 생년월일: ${idInfo.getBirthDate()}, 지역: ${idInfo.getRegionName()}`;
-        } else {
-            document.getElementById("resultText").textContent = "유효하지 않은 주민등록번호입니다.";
-        }
-    } catch (error) {
-        document.getElementById("resultText").textContent = error.message;
-    }
-});
+//     try {
+//         const idInfo = new KoreanIDInfo(idNumber);
+//         if (idInfo.validateID()) {
+//             document.getElementById("resultText").textContent = `유효한 주민등록번호입니다. 성별: ${idInfo.getGender()}, 생년월일: ${idInfo.getBirthDate()}, 지역: ${idInfo.getRegionName()}`;
+//         } else {
+//             document.getElementById("resultText").textContent = "유효하지 않은 주민등록번호입니다.";
+//         }
+//     } catch (error) {
+//         document.getElementById("resultText").textContent = error.message;
+//     }
+// });
 
-// 페이지 로드 시 저장된 입력값을 입력란에 표시
-window.addEventListener("load", function() {
-    const savedInput = localStorage.getItem("inputLog");
-    if (savedInput) {
-        document.getElementById("idInput").value = savedInput;
-    }
-});
+// // 페이지 로드 시 저장된 입력값을 입력란에 표시
+// window.addEventListener("load", function() {
+//     const savedInput = localStorage.getItem("inputLog");
+//     if (savedInput) {
+//         document.getElementById("idInput").value = savedInput;
+//     }
+// });
+
+// Upper code violates several security protocols
 
 
 // getRegionName() {
