@@ -46,10 +46,6 @@ If you would like to contribute to this project, please follow these steps.
 4. Push to the Branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
 ## Author
 
 - Mose Park - *Initial work* - [MosePark](https://github.com/m0p4rk)
